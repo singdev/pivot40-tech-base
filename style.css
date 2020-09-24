@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 0.4s;
 }
 
 header{
@@ -54,19 +55,22 @@ button {
     padding: 10px;
     width: 20%;
     border-radius: 5px;
+    z-index: 150;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .triangle{
     background: url(./img/triangle_ekena.png);
     background-position: bottom;
-    background-size: 50%;
-    background-repeat: repeat-x;
     height: 100vh;
     width: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 1000000000000000;
+    z-index: 100;
 }
 
 main{
