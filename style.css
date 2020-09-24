@@ -6,7 +6,7 @@
 
 header{
     background: url(
-        https://images.unsplash.com/photo-1537821433388-84904bca57a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80
+        https://images.unsplash.com/photo-1578575436955-ef29da568c6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80
     );
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,18 +14,30 @@ header{
     padding: 40px;
     height: 70%;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header img {
-    position: absolute;
-    width: 400px;
-    top: 40px;
-    left: 40px;
+    width: 50%;
+    z-index: 20;
 }
 
 p{
     text-align: center;
+    font-size: 1.0em;
+    color: black;
+    z-index: 20;
+}
+
+.smooth {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 71%;
+    background: linear-gradient(#ffffff00, #ffffff);
 }
 
 section{
@@ -35,7 +47,7 @@ section{
     padding: 20px;
 }
 
-#patch{
+button {
     color: #ffffff;
     background-color: #074b59;
     border: none;
@@ -47,12 +59,11 @@ section{
 div{
     background: url(./img/triangle_ekena.png);
     background-position: bottom;
-    height: 50%;
+    height: 30%;
 }
 
 main{
     display: flex;
     flex-direction: column;
     height: 100vh;
-
 }
